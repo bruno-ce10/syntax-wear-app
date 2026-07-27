@@ -2,7 +2,7 @@ function App() {
 
   return (
     <>
-    <p className="text-red-500">Hello, Vite + React!</p>
+    <p className="bg-error">Hello, Vite + React!</p>
     </>
   )
 }
