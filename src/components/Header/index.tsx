@@ -1,35 +1,50 @@
-import logo from "@/assets/images/logo.png";
-import iconUser from "@/assets/images/icon-user.png";
-import iconCart from "@/assets/images/icon-cart.png";
-import iconAbout from "@/assets/images/icon-about.png";
-
+import Logo from "@/assets/images/logo.png";
+import IconUser from "@/assets/images/icon-user.png";
+import IconAbout from "@/assets/images/icon-about.png";
+import IconCart from "@/assets/images/icon-cart.png";
 
 export const Header = () => {
-    return (
-        <div className= "relative">
-            <header className="fixed top-10 left-0 right-0 z-10 mx-10">
-                <div className="bg-white-700 max-w-[1320px} mx-auto flex justify-between items-center py-3 px-7 rounded-2x1 mt-5">
-                    <img src={logo} alt="Logo SyntaxWear" className="w-32 md:w-36" />
-                    <nav className="hidden md:block">
-                        <ul className="flex gap-10">
-                            <li><a href="#">Masculino</a></li>
-                            <li><a href="#">Feminino</a></li>
-                            <li><a href="#">Outlet</a></li>
-                        </ul>
-                    </nav>
+  return (
+    <div className="relative">
+      <header className="fixed top-10 left-0 right-0 z-10 mx-10">
+        <div className="bg-white max-w-[1320px] mx-auto flex justify-between items-center py-3 px-7 rounded-2xl mt-5">
+          <img src={Logo} alt="Logo SyntaxWear" className="w-32 md:w-36"/>
 
-                    <nav>
-                        <ul className="flex gap-4 md:gap-10">
-                            <li className="hidden md:block"><a href="#">Nossas lojas</a></li>
-                            <li className="hidden md:block"><a href="#">Sobre</a></li>
-                            <li><a href="#"><img src={iconUser} alt="Icone de login" /></a></li>
-                            <li><a href="#"><img src={iconAbout} alt="Icone de sobre" /></a></li>
-                            <li><a href="#"><img src={iconCart} alt="Icone de carrinho" /></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <h1>Cabeçalho</h1>
-            </header>
+          <nav className="hidden md:block md:mr-6">
+            <ul className="flex gap-10">
+              <li>
+                <a href="#">Masculino</a>
+              </li>
+              <li>
+                <a href="#">Feminino</a>
+              </li>
+              <li>
+                <a href="#">Outlet</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav>
+            <ul className="flex gap-4 md:gap-12">
+              <li className="hidden md:block">
+                <a href="#">Nossas Lojas</a>
+              </li>
+              <li className="hidden md:block">
+                <a href="#">Sobre</a>
+              </li>
+              <li>
+                <a href="#"><img src={IconUser} alt="Ícone de login" /></a>
+              </li>
+              <li>
+                <a href="#"><img src={IconAbout} alt="Ícone de sobre" /></a>
+              </li>
+              <li>
+                <a href="#"><img src={IconCart} alt="Ícone de carrinho" /></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-    )
-}
+      </header>
+    </div>
+  );
+};
